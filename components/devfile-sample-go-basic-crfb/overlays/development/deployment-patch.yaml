@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-crfb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/test-rhtap-27-tenant/load-app-381081c9-0fac-4e81-9004-948b90143557/devfile-sample-go-basic-crfb@sha256:8e86546780aec945e6f4ff60d40e5e4ad2f355d991de4cb041988266120552ef
+        name: my-go
+        resources: {}
+status: {}
